@@ -1,0 +1,422 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1A4283E4-DDEF-4E6E-93CF-88402057DD37}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ql_banhang</RootNamespace>
+    <AssemblyName>ql_banhang</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="banhangDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>banhangDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="F_DangKy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_DangKy.Designer.cs">
+      <DependentUpon>F_DangKy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_HDN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_HDN.Designer.cs">
+      <DependentUpon>F_HDN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_hoadonxuat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_hoadonxuat.Designer.cs">
+      <DependentUpon>F_hoadonxuat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Login.Designer.cs">
+      <DependentUpon>F_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_NCC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_NCC.Designer.cs">
+      <DependentUpon>F_NCC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_NhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_NhanVien.Designer.cs">
+      <DependentUpon>F_NhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QuanLy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QuanLy.Designer.cs">
+      <DependentUpon>F_QuanLy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_sanpham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_sanpham.Designer.cs">
+      <DependentUpon>F_sanpham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main1.Designer.cs">
+      <DependentUpon>Main1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NCC.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NCC.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QL_banhang.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_banhang.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QL_banhangDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_banhangDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QL_banhangDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_banhangDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QL_banhangDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_banhangDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QL_banhangDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_banhangDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QL_banhangDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_banhangDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="F_KhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_KhachHang.Designer.cs">
+      <DependentUpon>F_KhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QL_banhangDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_banhangDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QL_banhangDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_banhangDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QL_banhangDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_banhangDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QL_banhangDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_banhangDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QL_banhangDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_banhangDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QL_banhangDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_banhangDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QL_banhangDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_banhangDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Xuathoadon\khachhang1.cs" />
+    <Compile Include="Xuathoadon\ThongKe.cs" />
+    <EmbeddedResource Include="F_DangKy.resx">
+      <DependentUpon>F_DangKy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_HDN.resx">
+      <DependentUpon>F_HDN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_hoadonxuat.resx">
+      <DependentUpon>F_hoadonxuat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Login.resx">
+      <DependentUpon>F_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_NCC.resx">
+      <DependentUpon>F_NCC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_NhanVien.resx">
+      <DependentUpon>F_NhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QuanLy.resx">
+      <DependentUpon>F_QuanLy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_sanpham.resx">
+      <DependentUpon>F_sanpham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main1.resx">
+      <DependentUpon>Main1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="F_KhachHang.resx">
+      <DependentUpon>F_KhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="banhangDataSet.xsc">
+      <DependentUpon>banhangDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="banhangDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>banhangDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="banhangDataSet.xss">
+      <DependentUpon>banhangDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="NCC.xsc">
+      <DependentUpon>NCC.xsd</DependentUpon>
+    </None>
+    <None Include="NCC.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NCC.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NCC.xss">
+      <DependentUpon>NCC.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="QL_banhang.xsc">
+      <DependentUpon>QL_banhang.xsd</DependentUpon>
+    </None>
+    <None Include="QL_banhang.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QL_banhang.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QL_banhang.xss">
+      <DependentUpon>QL_banhang.xsd</DependentUpon>
+    </None>
+    <None Include="QL_banhangDataSet.xsc">
+      <DependentUpon>QL_banhangDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QL_banhangDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QL_banhangDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QL_banhangDataSet.xss">
+      <DependentUpon>QL_banhangDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QL_banhangDataSet1.xsc">
+      <DependentUpon>QL_banhangDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QL_banhangDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QL_banhangDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QL_banhangDataSet1.xss">
+      <DependentUpon>QL_banhangDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QL_banhangDataSet10.xsc">
+      <DependentUpon>QL_banhangDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="QL_banhangDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QL_banhangDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QL_banhangDataSet10.xss">
+      <DependentUpon>QL_banhangDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="QL_banhangDataSet11.xsc">
+      <DependentUpon>QL_banhangDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="QL_banhangDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QL_banhangDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QL_banhangDataSet11.xss">
+      <DependentUpon>QL_banhangDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="QL_banhangDataSet2.xsc">
+      <DependentUpon>QL_banhangDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="QL_banhangDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QL_banhangDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QL_banhangDataSet2.xss">
+      <DependentUpon>QL_banhangDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="QL_banhangDataSet3.xsc">
+      <DependentUpon>QL_banhangDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="QL_banhangDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QL_banhangDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QL_banhangDataSet3.xss">
+      <DependentUpon>QL_banhangDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="QL_banhangDataSet4.xsc">
+      <DependentUpon>QL_banhangDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="QL_banhangDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QL_banhangDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QL_banhangDataSet4.xss">
+      <DependentUpon>QL_banhangDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="QL_banhangDataSet5.xsc">
+      <DependentUpon>QL_banhangDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="QL_banhangDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QL_banhangDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QL_banhangDataSet5.xss">
+      <DependentUpon>QL_banhangDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="QL_banhangDataSet6.xsc">
+      <DependentUpon>QL_banhangDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="QL_banhangDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QL_banhangDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QL_banhangDataSet6.xss">
+      <DependentUpon>QL_banhangDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="QL_banhangDataSet7.xsc">
+      <DependentUpon>QL_banhangDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="QL_banhangDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QL_banhangDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QL_banhangDataSet7.xss">
+      <DependentUpon>QL_banhangDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="QL_banhangDataSet8.xsc">
+      <DependentUpon>QL_banhangDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="QL_banhangDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QL_banhangDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QL_banhangDataSet8.xss">
+      <DependentUpon>QL_banhangDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="QL_banhangDataSet9.xsc">
+      <DependentUpon>QL_banhangDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="QL_banhangDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QL_banhangDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QL_banhangDataSet9.xss">
+      <DependentUpon>QL_banhangDataSet9.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
